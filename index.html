@@ -1,299 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UFT-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kamma's Website</title>
+    <title>Kamma's website</title>
+
+    <link rel="stylesheet"
+    href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css
+    rel="stylesheet" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="user">
+        <img src="Headshot.jpg" alt="" />
+        <h3 class="name">Raghu Kamma</h3>
+        <p class="post">Manager - Wireless Audio Systems Engineering</p>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a style="text-decoration: none" href="#about">About</a></li>
+          <li><a style="text-decoration: none" href="#works">Works</a></li>
+          <li>
+            <a style="text-decoration: none" href="#projects">Projects</a>
+          </li>
+          <li><a style="text-decoration: none" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <section class="about" id="about">
+      <h3>Hi there !</h3>
+
+      <h1>I'm <span>Raghu Kamma.</span></h1>
+      <p>
+        I'm doing my master's in computer science at Portland State University.
+      </p>
+    </section>
+
+    <section class="works" id="works">
+      <h1 class="heading"><span>Works</span></h1>
+      <div class="row">
+        <div class="info">
+          <h2>Manager - Wireless Audio Systems Engineering</h2>
+          <p>
+            Skyworks Solutions Inc., Portland, Oregon, USA, Apr 2021 - Present
+          </p>
+          <ul>
+            <li>
+              Helping build world class audio solutions at AI Solutions Business
+              Unit. I deliver low latency wireless audio solutions that use
+              Machine Learning algorithms in the background.
+            </li>
+          </ul>
+
+          <h2>Staff Engineer</h2>
+          <p>Bosch, Detroit, Michigan, USA, Sep 2017 - Dec 2020</p>
+          <ul>
+            <li>
+              Develop and implement wireless audio solutions in infotainment
+              systems for various automotive vehicles. Worked on Bluetoth,
+              Wi-Fi, CarPlay, Android Auto and Mirror Link technologies on Linux
+              & Android OS for automotive systems.
+            </li>
+          </ul>
+
+          <h2>Senior Software Engineer</h2>
+          <p>Bosch, Melbourne, Australia, Less than a year in 2017</p>
+          <ul>
+            <li>
+              Established a Wireless Compliance Laboratory in Bosch's Melbourne
+              facility and trained a team of engineers to operate the laboratory
+              in compliance with the respective regulatory authorities. This lab
+              saved around ~$2M/product for the company (Bosch used to develop
+              around 70 wireless products/year back in 2016).
+            </li>
+          </ul>
+
+          <h2>Senior Software Engineer</h2>
+          <p>Bosch, Bengaluru, India, Jun 2014 - Dec 2016</p>
+          <ul>
+            <li>
+              Writing code to implement wireless audio functionality in various
+              embedded systems such as Mobile phones, speaker systems,
+              headphones, infotainment systems etc.
+            </li>
+          </ul>
+
+          <h2>Education</h2>
+          <ul>
+            <li>
+              Master of Science - Computer Science - Portland State University -
+              in progress
+            </li>
+            <li>
+              Bachelor of Engineering - Electronics & Communication - PES
+              University, Bengaluru India - 2014
+            </li>
+          </ul>
+
+          <a href="Kamma_Resume.pdf"
+            ><button class="btn btn-primary" type="submit">
+              Download CV
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h1 class="heading"><span>Projects</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-project-diagram"></i>
+          <span>Project Domain</span>
+          <h3>Project #1</h3>
+          <p>Project #1 details</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-project-diagram"></i>
+          <span>Project Domain</span>
+          <h3>Project #2</h3>
+          <p>Project #2 details.</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-project-diagram"></i>
+          <span>Project Domain</span>
+          <h3>Project #3</h3>
+          <p>Project #3 details.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact </span>me</h1>
+      <div class="row">
+        <div class="content">
+          <h3 class="title">Contact info</h3>
+          <form action="">
+            <input type="text" placeholder="name" class="box" />
+            <input type="email" placeholder="email" class="box" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="box message"
+              placeholder="message"
+            ></textarea>
+            <button type="submit" class="btn">
+              send <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="social_menu">
+        <ul>
+          <li>
+            <a href="https://github.com/raghukamma"
+              ><i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/raghavendrakamma/"
+              ><i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Copyright 2022 Raghu Kamma</p>
+    </footer>
+
+    <a href="#about" class="top">
+      <img src="scrollUp.png" alt="" width="50" height="50" />
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="index.js"></script>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link href="index.css" rel="stylesheet" />
-    <script src="index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body class="design">
-    <main>
-      <div>
-        <nav class="navbar navbar-expand-md fixed-top bg-danger mb-3">
-          <div class="container-md">
-            <a class="navbar-brand">
-              <img
-                src="Logo.png"
-                alt="website logo of Kamma"
-                height="150px"
-                width="150px"
-                class="mylogo"
-              />
-            </a>
-            <button
-              class="navbar-toggler collapsed text-dark"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapsingNavbarMd"
-              aria-controls="collapsingNavbarMd text-dark"
-              aria-expanded="false"
-            >
-              <span class="navbar-toggler-icon"></span
-              ><span style="color: white; margin-left: -28%">Click Me!</span>
-            </button>
-            <div class="navbar-collapse collapse" id="collapsingNavbarMd">
-              <ul class="navbar-nav text-center">
-                <li class="nav-item">
-                  <a href="#intro" class="nav-link"
-                    ><h3 class="text-dark">ABOUT</h3></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#work" class="nav-link"
-                    ><h3 class="h text-dark">WORK</h3></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#projects" class="nav-link"
-                    ><h3 class="h text-dark">PROJECTS</h3></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#contact" class="nav-link"
-                    ><h3 class="h text-dark">CONTACT</h3></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="connect" style="font-size: 18px">
-              <b class="text-dark">Connect with me on ....</b>
-              <div class="d-flex flex-row">
-                <a
-                  class="p-2 text-blue"
-                  title="LinkedIn"
-                  href="https://www.linkedin.com/in/raghavendrakamma/"
-                  ><i
-                    class="fa fa-linkedin-square"
-                    style="font-size: 36px"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-                <a
-                  class="p-2 text-dark"
-                  title="Github"
-                  href="https://github.com/raghukamma"
-                  ><i
-                    class="fa fa-github"
-                    style="font-size: 36px"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </nav>
-
-        <div>
-          <div id="intro">
-            <div class="row">
-              <div class="col-md-7 col-sm-7 mt-5">
-                <div class="aboutme">
-                  <h1>
-                    Hi There! I'm <span class="spancolor">Raghu Kamma!</span>
-                  </h1>
-                  <p>I am a graduate student at Portland State University.</p>
-                  <br />
-                  <a href="Kamma_Resume.pdf">Click here to view my Resume!</a>
-                </div>
-              </div>
-              <div class="myimage col-md-5 col-sm-5">
-                <img
-                  id="myphoto"
-                  class="img-fluid"
-                  src="Headshot.jpg"
-                  alt="This is a headshot of Raghu Kamma"
-                  width="400"
-                  height="400"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="work" class="mt-5 text-center">
-          <div
-            class="mb-5 text-center"
-            style="font-weight: bold; font-size: 3rem; color: blue"
-          >
-            Professional Background
-          </div>
-          <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-5">
-            <div class="col text-dark justify-content-left">
-            <div class="mb-5 text-center" style="font-weight: bold; font-size: 2rem; color: blue">Education</div>
-              <ul class="myprojects">
-                <li>
-                  <h4>Portland State University</h4>
-                  <p>
-                    <b class="duration"><i>Jan 2021-Present</i></b
-                    ><br />
-                    <b>Level: </b><span>Graduate</span><br />
-                    <b>Degree: </b><span>MS in Computer Science</span>
-                  </p>
-                </li>
-                <li>
-                  <h4>PES University, Karnataka, India</h4>
-                  <p>
-                    <b class="duration"><i>Aug 2010-Jun 2014</i></b
-                    ><br />
-                    <b>Level: </b><span>Undergraduate</span><br />
-                    <b>Degree: </b
-                    ><span>Bachelor of Engineering in Electrical & Electronics</span>
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div class="col text-dark">
-                <div class="mb-5 text-center" style="font-weight: bold; font-size: 2rem; color: blue">Experience</div>
-              <ul class="myprojects">
-                <li>
-                  <h4>Skyworks Solutions Inc., Portland, Oregon, USA</h4>
-                  <b class="duration"><i>April 2021- Present</i></b
-                  ><br />
-                  <b>Job Title: </b><span>Engineering Manager / Staff Engineer</span>
-                  <p>
-                    I deliver world class low latency wireless audio solutions
-                    that use Machine Learning algorithms in the background.
-                  </p>
-                </li>
-                <li>
-                  <h4>Bosch, Detroit, Michigan, USA</h4>
-                  <b class="duration"><i>Sep 2017- Dec 2020</i></b
-                  ><br />
-                  <b>Job Title: </b><span>Senior Software Engineer</span>
-                  <p>
-                    Develop and implement wireless audio slution solutions in
-                    infotainment systems for various automotive vehicles. Worked
-                    on Bluetoth, Wi-Fi, CarPlay, Android Auto and Mirror Link
-                    technologies on Linux & Android OS for automotive systems.
-                  </p>
-                </li>
-                <li>
-                    <h4>Bosch, Melbourne, Australia</h4>
-                    <b class="duration"><i>Less than a year in 2017</i></b
-                    ><br />
-                    <b>Job Title: </b><span>Senior Software Engineer</span>
-                    <p>
-                      Establish a Bluetooth Compliance Laboratory in Bosch's Melbourne facility and train a team of engineers to operate the laboratory in compliance with the respective regulatory authorities.
-                    </p>
-                  </li>
-                  <li>
-                    <h4>Bosch, Bengaluru, India</h4>
-                    <b class="duration"><i>Jun 2014 - Dec 2016</i></b
-                    ><br />
-                    <b>Job Title: </b><span>Senior Software Engineer</span>
-                    <p>
-                      Write code to implement wireless audio functionality in various embedded systems such as Mobile phones, speaker systems, headphones, infotainment systems etc.
-                    </p>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div id="projects" class="mt-5">
-          <div
-            class="text-center mb-5"
-            style="font-weight: bold; font-size: 3rem; color: blue"
-          >
-            PROJECTS
-          </div>
-          </div>
-        </div>
-        <div id="contact">
-          <div
-            class="text-center mb-5"
-            style="font-weight: bold; font-size: 3rem; color: blue"
-          >
-            CONTACT
-          </div>
-          <div>
-            <h3>
-              Get in touch with me:
-            </h3>
-            <form class="form-horizontal mx-auto mt-5 text-black" action="">
-              <div class="form-group row mx-auto mb-3">
-                <div class="col-sm-6">
-                  <label class="control-label para-styles" for="user"
-                    >Full Name:</label
-                  >
-                  <input
-                    type="name"
-                    class="form-control"
-                    id="user"
-                    name="user"
-                    placeholder="Enter your full name here"
-                    required
-                  />
-                </div>
-
-                <div class="col-sm-6">
-                  <label class="control-label para-styles" for="email"
-                    >Email:</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email here"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div class="form-group row mx-auto mb-3">
-                <div class="col-sm-12">
-                  <label class="control-label para-styles" for="info"
-                    >Tell me about your project:</label
-                  >
-                  <textarea
-                    rows="3"
-                    class="form-control"
-                    id="info"
-                    name="info"
-                    placeholder="Briefly explain your project idea here"
-                  ></textarea>
-                </div>
-              </div>
-              <br />
-              <div class="row pb-4 mx-auto">
-                <div class="col" style="text-align: center">
-                  <button
-                    type="submit"
-                    style="width: 180px"
-                    class="btn btn-dark text-white"
-                  >
-                    <b>Submit</b>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <i
-          class="fa fa-arrow-up"
-          onclick="scrollup()"
-          id="topbutton"
-          aria-hidden="true"
-        ></i>
-      </div>
-    </main>
   </body>
 </html>

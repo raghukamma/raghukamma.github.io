@@ -131,12 +131,6 @@
               University, Bengaluru India - 2014
             </li>
           </ul>
-
-          <a href="Kamma_Resume.pdf"
-            ><button class="btn btn-primary" type="submit">
-              Download CV
-            </button></a
-          >
         </div>
       </div>
     </section>
@@ -193,13 +187,20 @@
       <h1 class="heading"><span>contact </span>me</h1>
       <div class="row">
         <div class="content">
-          <h3 class="title">Contact info</h3>
           <form action="">
-            <input type="text" placeholder="name" class="box" />
-            <input type="email" placeholder="email" class="box" />
+            <label for="fullname">Full Name</label>
+            <input type="text" placeholder="name" class="box" id="fullname" />
+            <label for="emailaddress">Email</label>
+            <input
+              type="email"
+              placeholder="email"
+              class="box"
+              id="emailaddress"
+            />
+            <label for="textmessage">Message</label>
             <textarea
               name=""
-              id=""
+              id="textmessage"
               cols="30"
               rows="10"
               class="box message"
@@ -214,12 +215,16 @@
       <div class="social_menu">
         <ul>
           <li>
-            <a href="https://github.com/raghukamma"
+            <a
+              href="https://github.com/raghukamma"
+              aria-label="a link to GitHub profile page"
               ><i class="fab fa-github"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/raghavendrakamma/"
+            <a
+              href="https://www.linkedin.com/in/raghavendrakamma/"
+              aria-label="a link to LinkedIn profile page"
               ><i class="fab fa-linkedin-in"></i>
             </a>
           </li>
@@ -232,7 +237,7 @@
     </footer>
 
     <a href="#about" class="top">
-      <img src="scrollUp.png" alt="" width="50" height="50" />
+      <img src="scrollUp.png" alt="scroll up button" width="50" height="50" />
     </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -321,6 +321,11 @@ header .navbar ul li a:hover {
   padding-bottom: 0;
 }
 
+.contact .row .content .labelnames {
+  color: #fff;
+  font-size: 2rem;
+}
+
 .contact .row .content .info h3 {
   display: flex;
   align-items: center;

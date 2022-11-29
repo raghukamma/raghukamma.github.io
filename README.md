@@ -8,10 +8,10 @@ My portfolio website is deployed by GitHub pages at: https://raghukamma.github.i
 
 ## How to run the code:
 
-My portfoio is built on a single webpage and it has multiple sections on the same page.
+My portfolio is built on a single webpage and it has multiple sections on the same page.
 Hence, to see the portfolio webpage, simply upen the index.html on any commonly used web browsers i.e., Firefox, Chrome, and Safari.
 
-## How my website has been built:
+## How the webpage was built:
 
 I've built this webpage using HTML, CSS, and Javascript.
 Only since CSS & JavaScript files were created for this application since the webpage is a single page and hence it was easy to maintain while buildng the webpage.
